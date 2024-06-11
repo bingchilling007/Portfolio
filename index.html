@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #69b99d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+      img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+      .main-container {
+        background-color: white;
+        width: 80%;
+        max-width: 1280px;
+        height: 720px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .main-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 0 20px;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #69b99d;
+      }
+      .links {
+        display: flex;
+        gap: 30px;
+      }
+      .links a {
+        text-decoration: none;
+        color: #808080;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        flex-grow: 1;
+      }
+
+      .text-content h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+      .text-content span {
+        color: #69b99d;
+        font-size: 36px;
+      }
+      .text-content p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #808080;
+      }
+      .text-content .btn {
+        display: inline-block;
+        background-color: #69b99d;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: background-color 0.3s;
+      }
+
+      .image-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px 0;
+        color: #808080;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-bar">
+        <div class="logo">Trainee</div>
+        <nav class="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Training</a>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="text-content">
+          <h1>
+            WORKOUTS MADE
+            <span>EXCLUSIVE</span>
+            FOR YOU!
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            dolore quisquam laboriosam quia itaque laborum ut culpa. Aspernatur
+            tenetur quas deleniti reiciendis necessitatibus.
+          </p>
+          <a href="" class="btn">Start now</a>
+          <!-- <button>Push</button> -->
+        </div>
+        <div class="image-content">
+          <img src="fitness-jump.svg" alt="" />
+        </div>
+      </div>
+      <footer class="footer">send us a message @treine.me</footer>
+    </div>
+  </body>
+</html>
